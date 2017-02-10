@@ -1,0 +1,328 @@
+/* BEGIN .bg */
+.bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: url(../img/bg/bg.jpg) no-repeat;
+	opacity: 0;
+}
+/* END .bg */
+
+/* BEGIN .view */
+.view{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-perspective: 370px;
+	perspective: 370px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+	/* BEGIN .load */
+	.view>.load>.preload{
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+	.view>.load>.preload img{
+		width: 100%;
+	}
+	.view>.load{
+		margin-top: -15%;
+		width: 32%;
+		position: absolute;
+		left: 34%;
+		top: 55%;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+	.view>.load>.imgBox{
+		width: 100%;
+	}
+	.view>.load>.imgBox img{
+		width: 100%;
+	}
+	.view>.load p{
+		width: 100%;
+		font-size: 16px;
+		text-align: center;
+		position: relative;
+		top: 50%;
+		left: 0;
+	}
+	.view>.load>.exp{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+	.view>.load .expBox{
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+	.view>.load>.exp img{
+		margin: -10px 0 0 -10px;
+		height: 20px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	/* END .load */
+
+	/* BEGIN .main */
+	.main,
+	.viewZ,
+	.cloud,
+	.cylinder,
+	.pano,
+	.item,
+	.tag,
+	.link{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+	.cylinder>img{
+		margin: -585px 0 0 -64.5px;
+		width: 129px;
+		height: 1170px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	.cloud>img{
+		margin: -50px 0 0 -100px;
+		width: 200px;
+		height: 100px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.item>img{
+		margin-left: -64.5px;
+		width: 129px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	.link{
+		margin: -64px 0 0 -161px;
+		width: 322px;
+		height: 128px;
+	}
+	.blink{
+		width: 128px;
+		height: 128px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.name{
+		width: 0;
+		height: 72px;
+		position: absolute;
+		left: 80px;
+		top: 28px;
+		-webkit-transition: 0.7s ease-out;
+		transition: 0.7s ease-out;
+	}
+	/* END .main */
+
+/* END .view */
+
+/* BEGIN .info */
+/* wholeWidth: 16rem */
+/* wholeHeight: 23rem */
+.info{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	position: relative;
+	display: none;
+}
+.info *{
+	box-sizing: border-box;
+}
+.close{
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	right: 1.5rem;
+	top: -1.3rem;
+	background: url(../img/info/info-btn-close.png) no-repeat;
+	background-size: 1rem 1rem;
+}
+.top{
+	width: 100%;
+	height: 1.5rem;
+	background: url(../img/info/info-bg-top.png) no-repeat;
+	background-size: cover;
+}
+.btm{
+	width: 100%;
+	height: 1.5rem;
+	background: url(../img/info/info-bg-btm.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.left{
+	width: 1.2rem;
+	height: 11rem;
+	background: url(../img/info/info-bg-left.png) no-repeat;
+	background-size: 1.2rem 11rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+.right{
+	width: 1.2rem;
+	height: 11rem;
+	background: url(../img/info/info-bg-right.png) no-repeat;
+	background-size: 1.2rem 11rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.style-1{
+	width: 15rem;
+	height: 19rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 2.5rem;
+}
+.style-1 .cont{
+	padding: 1.3rem 1.8rem 0;
+	width: 11.6rem;
+	height: 16rem;
+	position: absolute;
+	left: 1.7rem;
+	top: 1.5rem;
+	background: url(../img/info/info-bg-v.png) no-repeat;
+	background-size: 11.6rem 16rem;
+	overflow: hidden;
+}
+.style-1 .cont img{
+	width: 8rem;
+}
+.style-2{
+	width: 15rem;
+	height: 14rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 5rem;
+}
+.style-2 .cont{
+	padding: 1.3rem 1.8rem 0;
+	width: 11.6rem;
+	height: 11rem;
+	position: absolute;
+	left: 1.7rem;
+	top: 1.5rem;
+	background: url(../img/info/info-bg-v.png) no-repeat;
+	background-size: 11.6rem 11rem;
+	overflow: hidden;
+}
+.style-2 .cont img{
+	width: 8rem;
+}
+.style-3{
+	width: 15rem;
+	height: 12rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 5.5rem;
+}
+.style-3 .cont{
+	width: 12.6rem;
+	height: 8rem;
+	position: absolute;
+	left: 1.2rem;
+	top: 1.5rem;
+	background: url(../img/info/info-bg-h.png) no-repeat;
+	background-size: 12.6rem 8rem;
+	overflow: hidden;
+}
+.style-3 .cont img{
+	width: 10rem;
+	position: absolute;
+	left: 1.3rem;
+	top: 1.2rem;
+}
+.style-4{
+	width: 15rem;
+	height: 19rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 2.5rem;
+}
+.style-4 .cont{
+	padding: 1.3rem 1.8rem 0;
+	width: 11.6rem;
+	height: 16rem;
+	position: absolute;
+	left: 1.7rem;
+	top: 1.5rem;
+	background: url(../img/info/info-bg-v.png) no-repeat;
+	background-size: 11.6rem 16rem;
+	overflow: hidden;
+}
+.style-4 .wrap{
+	width: 100%;
+	height: 13.3rem;
+	overflow: hidden;
+}
+.style-4 .cont img{
+	width: 8rem;
+}
+.style-4 .cont .tip{
+	width: 1rem;
+	position: absolute;
+	left: 5.4rem;
+	top: 14.6rem;
+	z-index: 2;
+}
+.info-rqly .wrap{
+	width: 100%;
+	height: 11.2rem;
+	overflow: hidden;
+}
+.info-rqly .cont .tip{
+	width: 1rem;
+	position: absolute;
+	left: 5.4rem;
+	top: 12.6rem;
+	z-index: 2;
+}
+.info-rqly .cont-btn img{
+	width: 8rem;
+	position: absolute;
+	left: 1.9rem;
+	top: 13rem;
+}
+.info-fyl,
+.info-wjy,
+.info-zjk,
+.info-lfx,
+.info-wd,
+.info-tp,
+.info-zgl,
+.info-qdp,
+.info-jqay,
+.info-rqly{
+	display: none;
+}
+/* END .info */

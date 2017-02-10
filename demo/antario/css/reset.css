@@ -1,0 +1,25 @@
+/* 清除默认样式 */
+
+body,
+p{
+	margin: 0;
+}
+
+html,
+body{
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+body{
+	font-family: "微软雅黑", "黑体", Helvetica, Verdana, sans-serif;
+}
+
+img{
+	vertical-align: top;
+}
+
+a{
+	text-decoration: none;
+}
