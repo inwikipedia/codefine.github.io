@@ -1,0 +1,36 @@
+/* public */
+@charset "utf-8";
+
+
+.wrap{
+	width: 1190px;
+	margin: 0 auto;
+}
+.article{
+	padding: 10px 0;
+}
+.box{
+	margin: 0 10px 10px 0;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	zoom: 1;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.pr{
+	position: relative;
+}
+.pa{
+	position: absolute;
+}

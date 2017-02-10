@@ -1,0 +1,50 @@
+/* css reset */
+@charset "utf-8";
+
+body,
+p,
+ul,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+input,
+button{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+
+body{
+	font-size: 12px;
+	font-family: tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+
+body *{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	outline: none;
+}
+img{
+	display: block;
+	border: none;
+	vertical-align: top;
+}
+input,
+button{
+	display: block;
+	outline: none;
+	background: none;
+	border: none;
+}
+
+em{
+	font-style: normal;
+}
