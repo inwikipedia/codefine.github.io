@@ -310,14 +310,6 @@ function cylinderIn(){
 function bgShow(){
 	var oBg = document.querySelector('.bg');
 	oBg.className = 'bg bg-opacity';
-//	MTween({
-//		"el": oBg,
-//		"target": {
-//			"opacity": 100
-//		},
-//		"time": 2000,
-//		"type": "easeOut"
-//	});
 }
 
 //Step2-9-1：漂浮层工厂模式
