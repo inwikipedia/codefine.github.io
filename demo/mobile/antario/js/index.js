@@ -6,7 +6,6 @@
 	});
 	setRem();
 	preload();
-//	mainIn();
 	autoPers();
 	
 })();
@@ -310,14 +309,15 @@ function cylinderIn(){
 //Step2-8：背景展示
 function bgShow(){
 	var oBg = document.querySelector('.bg');
-	MTween({
-		"el": oBg,
-		"target": {
-			"opacity": 100
-		},
-		"time": 2000,
-		"type": "easeOut"
-	});
+	oBg.className = 'bg bg-opacity';
+//	MTween({
+//		"el": oBg,
+//		"target": {
+//			"opacity": 100
+//		},
+//		"time": 2000,
+//		"type": "easeOut"
+//	});
 }
 
 //Step2-9-1：漂浮层工厂模式
