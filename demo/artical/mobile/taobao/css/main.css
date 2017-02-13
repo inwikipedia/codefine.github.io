@@ -121,35 +121,39 @@ body {
 .func .banner {
   height: 6.23188406rem;
   position: relative;
+  overflow: hidden;
 }
-.func .banner .tabImg li {
+.func .banner .img-list {
+  width: 160rem;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
 }
-.func .banner .tabImg img {
+.func .banner .img-list img {
   width: 20rem;
-  height: 6.23188406rem;
+  height: 100%;
+  vertical-align: top;
+  float: left;
 }
-.func .banner .tabBtn {
-  content: "";
-  display: block;
-  clear: both;
+.func .banner .btn-list {
   position: absolute;
   right: 0;
-  bottom: 0.62801932rem;
+  bottom: 3px;
 }
-.func .banner .tabBtn li {
+.func .banner .btn-list span {
+  width: 0.4rem;
+  height: 0.4rem;
+  border: 1px solid #ccc;
+  background: #FC622E;
+  opacity: 0.6;
+  border-radius: 50%;
+  display: block;
   float: left;
-  margin: 0 0.19323671rem;
-  width: 0.48309179rem;
-  height: 0.48309179rem;
-  border: 0.02415459rem solid rgba(0, 0, 0, 0.3);
-  border-radius: 100%;
-  background: rgba(255, 255, 255, 0.3);
+  margin-right: 5px;
 }
-.func .banner .tabBtn .active {
-  background: #fb551f;
+.func .banner .btn-list .active {
+  background: #fff;
 }
 .func nav {
   height: 8.55072464rem;

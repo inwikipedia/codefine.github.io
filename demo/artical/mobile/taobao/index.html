@@ -4,15 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1"/>
 		<title>DEMO:淘宝移动端首页</title>
-		<script type="text/javascript">
-			(function (){
-				var html = document.documentElement;
-				var htmlW = html.getBoundingClientRect().width;
-				html.style.fontSize = htmlW/20 + 'px';
-			})();
-		</script>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
@@ -28,23 +20,26 @@
 		<article class="wrap">
 			<article class="func">
 				<article class="banner">
-					<ul class="tabImg">
-						<li>
-							<a href="javascript:;">
-								<img src="img/banner/banner_1.jpg" />
-							</a>
-						</li>
-					</ul>
-					<ul class="tabBtn">
-						<li class="active"></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
+					<div class="img-list">
+						<img src="img/banner/banner_1.jpg" alt="" />
+						<img src="img/banner/banner_2.jpg" alt="" />
+						<img src="img/banner/banner_3.jpg" alt="" />
+						<img src="img/banner/banner_4.jpg" alt="" />
+						<img src="img/banner/banner_5.jpg" alt="" />
+						<img src="img/banner/banner_6.jpg" alt="" />
+						<img src="img/banner/banner_7.jpg" alt="" />
+						<img src="img/banner/banner_8.jpg" alt="" />
+					</div>
+					<div class="btn-list">
+						<span class="active"></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 				</article>
 				<nav>
 					<ul>
@@ -229,5 +224,10 @@
 				</h2>
 			</hgroup>
 		</footer>
+		<script type="text/javascript">
+			var html = document.documentElement;
+			var htmlW = html.getBoundingClientRect().width;
+			html.style.fontSize = htmlW/20 + 'px';
+		</script>
 	</body>
 </html>

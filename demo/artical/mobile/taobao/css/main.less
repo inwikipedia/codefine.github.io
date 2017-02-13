@@ -78,34 +78,39 @@ body{
     .banner{
         height: 258/@rem;
         position: relative;
-        .tabImg{
-            li{
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
-            img{
-                .img(@w:828,@h:258);
-            }
-        }
-        .tabBtn{
-            .clearFix;
-            li{
-                .fl;
-                margin: 0 8/@rem;
-                width: 20/@rem;
-                height: 20/@rem;
-                border: 1/@rem solid rgba(0,0,0,0.3);
-                border-radius: 100%;
-                background: rgba(255,255,255,0.3);
-            }
-            .active{
-                background: @mainColor;
-            }
-            position: absolute;
-            right: 0;
-            bottom: 26/@rem;
-        }
+        overflow: hidden;
+        .img-list{
+			width: 160rem;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			img{
+				width: 20rem;
+				height: 100%;
+				vertical-align: top;
+				float: left;
+			}
+		}
+		.btn-list{
+			position: absolute;
+			right: 0;
+			bottom: 3px;
+			span{
+				width: 0.4rem;
+				height: 0.4rem;
+				border: 1px solid #ccc;
+				background: #FC622E;
+				opacity: 0.6;
+				border-radius: 50%;
+				display: block;
+				float: left;
+				margin-right: 5px;
+			}
+			.active{
+				background: #fff;
+			}
+		}
     }
     
     nav{
