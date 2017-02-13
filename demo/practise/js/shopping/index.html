@@ -144,31 +144,33 @@
 				var arrLi = [];
 				var piece = 0;
 				
-				for (var i=0; i<aUpLi.length; i++) {
-					$('@input',aUpLi[i])[1].index = i;
-					$('@input',aUpLi[i])[1].onclick = function (){
-						var n = this.index;
-						arrLi.push('<li><span>'+$('@strong',aUpLi[n])[0].innerHTML+'</span><strong>'+$('@span',aUpLi[n])[0].innerHTML+'</strong><img src="'+$('@img',aUpLi[n])[0].src+'" alt="" /></li>');
-						timer = setInterval(function (){
-							var iNow = new Date();
-							var iFut = new Date($('@input',aUpLi[n])[0].value);
-							var t = Math.floor((iFut-iNow)/1000);
-							var cd = (Math.floor(t%86400/3600)<10 ? '0'+Math.floor(t%86400/3600) : ''+Math.floor(t%86400/3600))+'小时'+(Math.floor(t%86400%3600/60)<10 ? '0'+Math.floor(t%86400%3600/60) : ''+Math.floor(t%86400%3600/60))+'分钟'+((t%60)<10 ? '0'+(t%60) : ''+(t%60))+'秒';
-							$('@p',aUpLi[n])[0].innerHTML = cd;
-							if (t==0) {
-								shake(aUpLi[n],'left',function (){
-									doMove(aUpLi[n],'top',10,200);
-									opacity(aUpLi[n],10,0,function (){
-										aUpLi[n].style.display = 'none';
-										$('@ul',$('#down'))[0].innerHTML += arrLi[n];
-										piece += parseFloat($('@span',aUpLi[n])[0].innerHTML.replace('¥',''));
-										$('@span',$('#sum'))[0].innerHTML = '¥' + piece;
+				setTimeout(function (){
+					for (var i=0; i<aUpLi.length; i++) {
+						$('@input',aUpLi[i])[1].index = i;
+						$('@input',aUpLi[i])[1].onclick = function (){
+							var n = this.index;
+							arrLi.push('<li><span>'+$('@strong',aUpLi[n])[0].innerHTML+'</span><strong>'+$('@span',aUpLi[n])[0].innerHTML+'</strong><img src="'+$('@img',aUpLi[n])[0].src+'" alt="" /></li>');
+							timer = setInterval(function (){
+								var iNow = new Date();
+								var iFut = new Date($('@input',aUpLi[n])[0].value);
+								var t = Math.floor((iFut-iNow)/1000);
+								var cd = (Math.floor(t%86400/3600)<10 ? '0'+Math.floor(t%86400/3600) : ''+Math.floor(t%86400/3600))+'小时'+(Math.floor(t%86400%3600/60)<10 ? '0'+Math.floor(t%86400%3600/60) : ''+Math.floor(t%86400%3600/60))+'分钟'+((t%60)<10 ? '0'+(t%60) : ''+(t%60))+'秒';
+								$('@p',aUpLi[n])[0].innerHTML = cd;
+								if (t==0) {
+									shake(aUpLi[n],'left',function (){
+										doMove(aUpLi[n],'top',10,200);
+										opacity(aUpLi[n],10,0,function (){
+											aUpLi[n].style.display = 'none';
+											$('@ul',$('#down'))[0].innerHTML += arrLi[n];
+											piece += parseFloat($('@span',aUpLi[n])[0].innerHTML.replace('¥',''));
+											$('@span',$('#sum'))[0].innerHTML = '¥' + piece;
+										});
 									});
-								});
-							}
-						},1000);
-					};
-				}
+								}
+							},1000);
+						};
+					}
+				},2000);
 				
 			})
 		</script>
