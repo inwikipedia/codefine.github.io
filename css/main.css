@@ -1,0 +1,54 @@
+@media (min-width: 992px) {
+	.r-padding{
+		padding-right: 10px !important;
+	}
+}
+
+a{
+	color: #000000;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+a:link{
+	color: #000000;
+	text-decoration: none;
+}
+a:hover{
+	color: #ff4400;
+	text-decoration: none;
+}
+img{
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+a:hover img{
+	opacity: 0.6;
+}
+
+.clearPadding{
+	padding: 0;
+}
+
+.left img{
+	width: 200px;
+	height: 200px;
+}
+.panel-body .indent{
+	font-weight: bold;
+	font-size: 15px;
+	text-indent: 2em;
+}
+.flex{
+	display: -webkit-box;
+	display: flex;
+	justify-content: center;
+	-webkit-box-pack: center;
+	align-items: center;
+	-webkit-box-align: center;
+}
+
+.right img{
+	border-radius: 50%;
+	margin: 5px 0;
+}
