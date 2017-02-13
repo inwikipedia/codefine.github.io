@@ -35,27 +35,29 @@
 		//方法2:判断图片src
 			$(function (){
 				
-				var aImg1 = $('@img',$('#now'));
-				var aImg2 = $('@img',$('#fut'));
-				var onOff = true;
-				
-//				//初始化
-				reset();
-				
-//				//核型主程序执行
-				setInterval(reset,1000);
-				
-//				//冒号闪烁
-				setInterval(function (){
-					if (onOff) {
-						aImg1[2].src = 'img/colon_hide.jpg';
-						aImg1[5].src = 'img/colon_hide.jpg';
-					} else {
-						aImg1[2].src = 'img/colon_show.jpg';
-						aImg1[5].src = 'img/colon_show.jpg';
-					}
-					onOff = !onOff;
-				},500)
+				setTimeout(function (){
+					var aImg1 = $('@img',$('#now'));
+					var aImg2 = $('@img',$('#fut'));
+					var onOff = true;
+					
+	//				//初始化
+					reset();
+					
+	//				//核型主程序执行
+					setInterval(reset,1000);
+					
+	//				//冒号闪烁
+					setInterval(function (){
+						if (onOff) {
+							aImg1[2].src = 'img/colon_hide.jpg';
+							aImg1[5].src = 'img/colon_hide.jpg';
+						} else {
+							aImg1[2].src = 'img/colon_show.jpg';
+							aImg1[5].src = 'img/colon_show.jpg';
+						}
+						onOff = !onOff;
+					},500)
+				},4000);
 				
 				function reset(){
 					
